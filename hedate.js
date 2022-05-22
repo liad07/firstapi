@@ -119,7 +119,7 @@ if (window.location.href.indexOf("?convert") != -1) {
     console.log(heday(day-2))
     document.getElementById("2").style.display="none";
     document.getElementById("3").style.display="none";
-    document.getElementById("all").textContent='{"year":'+hebyear(year)+' "month":'+hemouth(month)+' "day":'+heday(day-2)+"}";
+    document.getElementById("all").innerHTML='{"year":'+hebyear(year)+' "month":'+hemouth(month)+' "day":'+heday(day-2)+"}";
 } else {
     hedate(y.getFullYear(), y.getMonth() - 1, y.getDate());
 }
